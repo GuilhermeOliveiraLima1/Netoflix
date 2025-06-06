@@ -1,0 +1,7 @@
+.header-container {
+  background-color: rgb(14, 14, 77);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

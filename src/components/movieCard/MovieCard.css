@@ -1,0 +1,29 @@
+.movie-title{
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.movie-card {
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgb(1, 131, 192);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.movie-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-link {
+  text-decoration: none;
+  display: flex;
+  flex-basis: auto;
+}
+
