@@ -7,7 +7,7 @@ import Stars from "../../components/stars/stars";
 
 
 function MovieDetails() {
-  const { id } = useParams();
+  const { id }  = useParams();
   const [movieDetails, setMovieDetails] = useState([]);
   const [trailer, setTrailer] = useState([]);
 
@@ -43,7 +43,6 @@ function MovieDetails() {
     };
     const response = await fetch(url, options);
     const data = await response.json();
-    console.log(data);
     setMovieDetails(data);
   }, [id]);
 
@@ -66,7 +65,7 @@ function MovieDetails() {
             ))}
           </ul>
           <p className="date">Lançamento: {movieDetails.release_date}</p>
-            {movieDetails.vote_average !== undefined && (
+            {movieDetails.vote_average != undefined && (
               <div className="vote">
                 <Stars vote={movieDetails.vote_average} />
                 <p>({movieDetails.vote_count})</p>

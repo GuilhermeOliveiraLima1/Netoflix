@@ -1,7 +1,5 @@
 .backdrop-container {
   position: relative;
-  flex-direction: column;
-  align-items: center;
 }
 
 .backdrop {
@@ -26,6 +24,7 @@
 
 
 .informations {
+  width: 85%;
   color: white;
   display: flex;
   flex-direction: column;
